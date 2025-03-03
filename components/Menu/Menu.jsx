@@ -61,7 +61,7 @@ const Menu = () => {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4 grid-flow-row-dense auto-rows-fr md:py-20 pb-40 pt-10 px-10">
             {food.map((item, index) => (
                 <div key={index} className="bg-white flex flex-col justify-between h-full p-2">
-                <img className="w-full h-40 object-cover" src={`https://kaana.garooinc.com/kaana/api/files/${item.collectionId}/${item.id}/${item.Image}?token=`} alt={item.name} />
+                <img className="w-full h-40 object-cover" src={`${backendUrl}/api/files/${item.collectionId}/${item.id}/${item.Image}?token=`} alt={item.name} />
                 <h3 className="text-black text-base leading-tight font-futura mt-2">{item.Title}</h3>
                 <p className="text-black text-xs font-[futura light] leading-none">{item.Description}</p>
                 <div className="flex-1 flex flex-col justify-between">
@@ -83,7 +83,7 @@ const Menu = () => {
                 </div>
                 </div>
             ))}
-  {notification && <CartNotification productName={actualProduct.Title} productImage={`https://kaana.garooinc.com/kaana/api/files/${actualProduct.collectionId}/${actualProduct.id}/${actualProduct.Image}?token=`} productVariant={actualProduct.Variant} />}
+  {notification && <CartNotification productName={actualProduct.Title} productImage={`${backendUrl}/api/files/${actualProduct.collectionId}/${actualProduct.id}/${actualProduct.Image}?token=`} productVariant={actualProduct.Variant} />}
 </div>
 
     );

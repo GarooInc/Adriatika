@@ -249,7 +249,7 @@
 }
 
 .fontdesk_item_text{
-  @apply md:text-lg text-primary flex flex-col items-center text-center justify-center;
+  @apply md:text-lg text-secondary flex flex-col items-center text-center justify-center;
 }
 
 /* food and drinks */
@@ -267,19 +267,19 @@
 }
 
 .food_drinks_info {
-  @apply flex flex-col p-10  bg-tertiary gap-4;
+  @apply flex flex-col p-10  bg-secondary gap-4;
 }
 
 .food_drinks_title{
-  @apply md:text-4xl text-2xl leading-tight font-futura mt-2 text-secondary;
+  @apply md:text-4xl text-2xl leading-tight font-futura mt-2 text-primary;
 }
 
 .food_drinks_description_container{
-  @apply flex flex-col gap-4 border-b border-secondary py-2;
+  @apply flex flex-col gap-4 border-b border-primary py-2;
 }
 
 .food_drinks_description{
-  @apply text-secondary md:text-lg text-sm font-futura leading-6 text-justify;
+  @apply text-primary md:text-lg text-sm font-futura leading-6 text-justify;
 }
 
 .food_drinks_icons_container{
@@ -287,7 +287,7 @@
 }
 
 .food_drinks_text{
-  @apply text-secondary md:text-lg text-sm font-futura leading-none flex gap-2 font-medium;
+  @apply text-primary md:text-lg text-sm font-futura leading-none flex gap-2 font-medium;
 }
 
 .menu_btn{

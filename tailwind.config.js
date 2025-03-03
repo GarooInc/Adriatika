@@ -32,9 +32,9 @@
         'playfair': ['playfair', 'serif'],
       },
       colors: {
-        "primary": "#C5A262",
-        "secondary": "#F8F4ED",
-        "tertiary": "#8C9C3F",
+        "primary": "#646363",
+        "secondary": "#fff",
+        "tertiary": "#CD1316",
         "quaternary": "#555347",
         "quinary": "#b9d056",
         "senary": "#e0cc94",

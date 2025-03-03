@@ -15,8 +15,8 @@ export default async function HouseKeeping({ params: { locale }}) {
     return (
         <TranslationsProvider locale={locale} namespaces={namespaces} resources={resources}>
         <div className="page bg-secondary relative">
-            <div className='flex flex-col justify-center items-center'>
-                <HeaderItem v={"v4"} transparent/>
+            <div className='flex flex-col justify-center items-center w-full'>
+                <HeaderItem v={"v3"} transparent/>
                 <h2 className='italictiempos_title text-quaternary'>{t('emergency:title')}</h2>
                 <InfoDisplay collection="Emergency" colorlines="quaternary" coloricon="tertiary"/>
                 <div className="flex flex-col justify-center items-center gap-4 md:w-3/4 px-10 w-full md:h-full md:pb-0 pb-28">

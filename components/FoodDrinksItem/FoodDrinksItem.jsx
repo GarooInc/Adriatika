@@ -52,11 +52,11 @@ const FoodDrinksItem = () => {
                         </div>
                         <div className='food_drinks_icons_container'>
                                 <p className="food_drinks_text">
-                                    <MdLocationPin className="text-secondary text-md" />
+                                    <MdLocationPin className="text-primary text-md" />
                                     {item[`location_${currentLocale}`]}
                                 </p>
                                 <p className="food_drinks_text">
-                                    <TbClockHour3Filled className="text-secondary text-md" />
+                                    <TbClockHour3Filled className="text-primary text-md" />
                                     {item.open} - {item.closes}
                                 </p>
                                 <button className='menu_btn' onClick={() => openPdf(item)}>Menu</button>

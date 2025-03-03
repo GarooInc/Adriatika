@@ -14,12 +14,12 @@ export default async function FoodDrinks({ params: { locale }}) {
 
 return (
     <TranslationsProvider locale={locale} namespaces={namespaces} resources={resources}>
-        <div className="page bg-quinary">
+        <div className="page bg-secondary">
             <HeaderItem v={"v12"} transparent/>
-            <h1 className="italictiempos_title text-secondary">{t('food_drinks:title')}</h1>
+            <h1 className="italictiempos_title text-primary">{t('food_drinks:title')}</h1>
             <FoodDrinksItem />
-            <div className='flex justify-center items-center w-full p-4 bg-tertiary'>
-                <img src="/assets/images/logo_v9.png" alt="logo" className="md:w-28 w-20" />
+            <div className='flex justify-center items-center w-full p-4 bg-secondary'>
+                <img src="/assets/images/logo_v3.png" alt="logo" className="md:w-28 w-20" />
             </div>
         </div>
         <LanguageSwitcher />
