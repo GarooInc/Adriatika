@@ -21,11 +21,11 @@ export default async function FrontDesk({ params: { locale }}) {
                         <div className='flex flex-col md:items-center justify-center gap-4 font-futura px-10'>
                             <div className="fontdesk_item">
                                 <FaWhatsapp className="mr-2 text-secondary text-2xl" />
-                                <a href="https://wa.me/5016144247" className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:whatsapp')} </span><span> +501 614-4247</span></a>
+                                <a href="https://wa.me/50224962222" className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:whatsapp')} </span><span> +502 2496-2222</span></a>
                             </div>
                             <div className="fontdesk_item">
                                 <FaPhone className="mr-2 text-secondary text-2xl" />
-                                <a href="tel:+501 824 3350" className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:phone')} </span><span> +501 824-3350</span></a>
+                                <a href="tel:+502 24962222" className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:phone')} </span><span> +502 2496-2222</span></a>
                             </div>
                             <div className="fontdesk_item">
                                 <FaWifi className="mr-2 text-secondary text-2xl" />
@@ -37,7 +37,7 @@ export default async function FrontDesk({ params: { locale }}) {
                                 </div>
                             </div>
                         </div>
-                <InfoDisplay collection="Front_Desk" colorlines="white" coloricon="primary" />
+                <InfoDisplay collection="Front_Desk" colorlines="white" coloricon="secondary" />
                 <FooterItem  transparent logo={"v9"}/>
             </div>
         </div>
