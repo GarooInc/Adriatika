@@ -36,10 +36,10 @@ export default async function Menu({ params: { locale }}) {
             title: t('home:nav7'),
             link: '/adventures'
         },
-        {
-            title: t('home:nav13'),
-            link: '/spa'
-        },
+        // {
+        //     title: t('home:nav13'),
+        //     link: '/spa'
+        // },
         {
             title: t('home:nav10'),
             link: '/emergency'

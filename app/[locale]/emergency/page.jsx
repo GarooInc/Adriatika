@@ -20,7 +20,7 @@ export default async function HouseKeeping({ params: { locale }}) {
                 <h2 className='italictiempos_title text-quaternary'>{t('emergency:title')}</h2>
                 <InfoDisplay collection="Emergency" colorlines="quaternary" coloricon="tertiary"/>
                 <div className="flex flex-col justify-center items-center gap-4 md:w-3/4 px-10 w-full md:h-full md:pb-0 pb-28">
-                    <div className='collapse-title md:text-lg text-sm font-medium font-futura uppercase peer-checked:collapse-open text-quaternary py-0'>
+                    {/* <div className='collapse-title md:text-lg text-sm font-medium font-futura uppercase peer-checked:collapse-open text-quaternary py-0'>
                         Emergency Contacts
                     </div>
                     <div className='flex md:flex-row flex-col md:justify-center justify-start items-center mx-auto border-black border-b w-full'>
@@ -32,7 +32,7 @@ export default async function HouseKeeping({ params: { locale }}) {
                             <PhoneItem name={t('emergency:phone3')} p1="+501 824-2066" link1="tel:+501 824-2066" />
                             <PhoneItem name={t('emergency:phone4')} p1="+501 635-0678" link1="tel:+501 635-0678" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 
             </div>
