@@ -70,10 +70,6 @@ export default async function Menu({ params: { locale }}) {
                         ))
                     }
                 </div>
-                <div className='flex justify-center items-center w-full gap-4 py-4'>
-                    <img src="/assets/images/welcome/sublogo1.png" alt="sublogo1" className="w-[100px]" />
-                    <img src="/assets/images/welcome/sublogo2.png" alt="sublogo2" className="w-[100px]" />
-                </div>
             </div>
             <ChatBubble />
         </main>
