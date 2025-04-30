@@ -13,6 +13,14 @@ export default async function Menu({ params: { locale }}) {
     const { t, resources } = await initTranslations(locale, namespaces)
     const nav = [
         {
+            title: t('home:nav1'),
+            link: '/welcome'
+        },
+        {
+            title: t('home:nav14'),
+            link: '/misionandvision'
+        },
+        {
             title: t('home:nav2'),
             link: '/frontdesk'
         },

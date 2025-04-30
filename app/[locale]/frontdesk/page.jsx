@@ -20,20 +20,20 @@ export default async function FrontDesk({ params: { locale }}) {
                 <h2 className='italictiempos_title text-secondary'>{t('frontdesk:title')}</h2>
                         <div className='flex flex-col md:items-center justify-center gap-4 font-futura px-10'>
                             <div className="fontdesk_item">
-                                <FaWhatsapp className="mr-2 text-secondary text-2xl" />
-                                <a href="https://wa.me/50224962222" className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:whatsapp')} </span><span> +502 2496-2222</span></a>
+                                <FaPhone className="mr-2 text-secondary text-2xl" />
+                                <a href="tel:+502 24962222 " className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:phone')} </span><span> +502 2496-2222 Ext. 3000 </span></a>
                             </div>
                             <div className="fontdesk_item">
-                                <FaPhone className="mr-2 text-secondary text-2xl" />
-                                <a href="tel:+502 24962222" className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:phone')} </span><span> +502 2496-2222</span></a>
+                                <FaWhatsapp className="mr-2 text-secondary text-2xl" />
+                                <a href="https://wa.me/35688881" className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:whatsapp')} </span><span> +502 3568-8881</span></a>
                             </div>
                             <div className="fontdesk_item">
                                 <FaWifi className="mr-2 text-secondary text-2xl" />
                                 <span className="fontdesk_item_text uppercase">WiFi</span>
-                                <span className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:wifi_name')}: Ka'ana Guest WiFi</span></span>
+                                <span className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:wifi_name')}: AdriatikaWE</span></span>
                                 <div className='flex justify-center items-center gap-2'>
                                     <span className="fontdesk_item_text"><span className='uppercase'>{t('frontdesk:wifi_password')}:</span></span>
-                                    <span className='fontdesk_item_text'>Belizejungle</span>
+                                    <span className='fontdesk_item_text'>2T8ru3st$</span>
                                 </div>
                             </div>
                         </div>
