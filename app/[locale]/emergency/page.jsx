@@ -34,9 +34,8 @@ export default async function HouseKeeping({ params: { locale }}) {
                         </div>
                     </div> */}
                 </div>
-                
+                <FooterItem   logo={"v11"}/>
             </div>
-            <FooterItem  transparent logo={"v11"}/>
         </div>
         <LanguageSwitcher />
         </TranslationsProvider>

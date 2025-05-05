@@ -304,3 +304,16 @@
 .react-pdf__Page, .stf__parent canvas{
   height: 100% !important;
 }
+
+
+.collapse-content li{
+  @apply list-disc list-inside  font-futura;
+}
+
+.collapse-content table {
+  @apply w-full text-left border-collapse border border-quaternary mt-4;
+}
+
+.collapse-content td {
+  @apply text-primary font-futura text-sm px-4 py-2 border border-quaternary;
+}
