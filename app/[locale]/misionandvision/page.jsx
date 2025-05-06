@@ -18,17 +18,17 @@ export default async function MisionVision({ params: { locale } }) {
 
         <section className="max-w-4xl mx-auto space-y-12 mt-12 px-10">
           <div>
-            <h2 className="text-3xl font-semibold border-b pb-2">{t('misionvision:mision')}</h2>
+            <h2 className="mision_vision_title">{t('misionvision:mision')}</h2>
             <p className="text-lg leading-7">{t('misionvision:mision_desc')}</p>
           </div>
 
           <div>
-            <h2 className="text-3xl font-semibold border-b pb-2 ">{t('misionvision:vision')}</h2>
+            <h2 className="mision_vision_title ">{t('misionvision:vision')}</h2>
             <p className="text-lg leading-7">{t('misionvision:vision_desc')}</p>
           </div>
 
           <div>
-            <h2 className="text-3xl font-semibold border-b pb-2">{t('misionvision:values')}</h2>
+            <h2 className="mision_vision_title">{t('misionvision:values')}</h2>
             <ul className="list-disc list-inside text-lg space-y-1">
               {t('misionvision:values_desc')
                 .split('<br>')

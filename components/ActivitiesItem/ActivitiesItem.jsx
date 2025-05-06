@@ -40,11 +40,9 @@ const ActivitiesItem = () => {
             activities.map((item, index) => (
                 <div 
                 key={index} 
-                className={`bg-secondary px-2 py-4 gap-2 flex md:flex-col relative cursor-pointer 
-                ${(index + 1) % 4 !== 0 ? 'md:border-r md:border-black border-b border-black' : ''} 
-                ${(index + 1) % 2 !== 0 ? 'md:border-r md:border-black' : ''}`}>
+                className={`bg-secondary shadow-md px-2 py-4 gap-2 flex md:flex-col relative cursor-pointer rounded-md`}>
                     <div className='flex justify-center w-full items-center'>
-                        <img className="md:h-60 h-28 object-cover md:object-contain" src={`${backendUrl}/api/files/${item.collectionId}/${item.id}/${item.Image}?token=`} alt={item.name} />
+                        <img className="md:h-60 h-28 object-cover" src={`${backendUrl}/api/files/${item.collectionId}/${item.id}/${item.Image}?token=`} alt={item.name} />
                     </div>
                     {/* añadir un separador de imagen */}
                     <div className="separator"></div>
