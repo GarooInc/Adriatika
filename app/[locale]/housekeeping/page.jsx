@@ -28,7 +28,6 @@ export default async function HouseKeeping({ params: { locale }}) {
                     <a href="https://wa.me/35688881" className="fontdesk_item_text text-primary"><span className='uppercase'>{t('frontdesk:whatsapp')} </span><span> +502 3568-8881</span></a>
                 </div>
                 <InfoDisplay collection="Housekeeping" colorlines="quaternary" coloricon="tertiary" />
-                <ServicesItem room={true} collection={"room_services"}/>
                 <FooterItem  transparent logo={"v11"}/>
             </div>
         </div>
