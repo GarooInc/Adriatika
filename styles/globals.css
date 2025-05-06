@@ -321,7 +321,7 @@
 /* mision and vision */
 
 .mision_vision_title{
-  @apply text-3xl font-semibold border-b pb-2 font-futura;
+  @apply text-2xl font-semibold border-b pb-2 font-futura;
 }
 
 .mision_vision_text{
