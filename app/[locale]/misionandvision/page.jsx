@@ -4,7 +4,6 @@ import TranslationsProvider from '@/components/TranslationsProvider'
 import LanguageSwitcher from '@/components/LanguageSwitcher/LanguageSwitcher'
 import ChatBubble from '@/components/ChatBubble/ChatBubble'
 import HeaderItem from '@/components/HeaderItem/HeaderItem'
-import FormatedText from '@/components/FormatedText/FormatedText'
 
 const namespaces = ['misionvision', 'header']
 
@@ -16,7 +15,7 @@ export default async function MisionVision({ params: { locale } }) {
       <div className="page bg-secondary min-h-screen text-primary">
         <HeaderItem v={"v3"} nav={'/'} />
 
-        <section className="mx-auto space-y-12 px-10">
+        <section className="mx-auto flex flex-col gap-4 px-10">
           <div>
             <h2 className="mision_vision_title">{t('misionvision:mision')}</h2>
             <p className="mision_vision_text">{t('misionvision:mision_desc')}</p>
