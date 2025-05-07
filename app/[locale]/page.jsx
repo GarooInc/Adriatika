@@ -53,9 +53,13 @@ export default async function Menu({ params: { locale }}) {
             link: '/emergency'
         },
         {
-            title: t('home:nav11'),
-            link: '/faqs'
-        }
+            title: t('home:nav8'),
+            link: '/contacts'
+        },
+        // {
+        //     title: t('home:nav11'),
+        //     link: '/faqs'
+        // }
     ]
 
     return (

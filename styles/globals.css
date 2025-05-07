@@ -315,7 +315,11 @@
 }
 
 .collapse-content td {
-  @apply text-primary font-futura text-sm px-4 py-2 border border-quaternary;
+  @apply text-primary font-futura md:text-sm text-xs px-4 py-2 border border-quaternary;
+}
+
+.collapse-content th {
+  @apply text-primary font-futura md:text-sm text-xs;
 }
 
 /* mision and vision */
