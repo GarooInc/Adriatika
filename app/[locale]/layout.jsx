@@ -4,8 +4,8 @@ import Script from "next/script"
 
 
 export const metadata = {
-    title: 'Adriatika  Resort',
-    description: 'At Adriatika resort, we offer luxury accommodations, adventure tours, and all-inclusive packages. ',
+    title: 'Adriatika Hotel & Residence Guatemala',
+    description: 'At Adriatika, we offer luxury accommodations, adventure tours, and all-inclusive packages. ',
     url: '',
     image: '/assets/images/logo_v1.png'
 }
