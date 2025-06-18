@@ -4,8 +4,8 @@ import TranslationsProvider from '@/components/TranslationsProvider'
 import LanguageSwitcher from '@/components/LanguageSwitcher/LanguageSwitcher'
 import HeaderItem from '@/components/HeaderItem/HeaderItem'
 import InfoDisplay from '@/components/InfoDisplay/InfoDisplay'
-import { FaWhatsapp, FaPhone, FaWifi } from "react-icons/fa"
 import FooterItem from '@/components/FooterItem/FooterItem'
+import WhatsappButton from '@/components/WhatsappButton/WhatsappButton'
 
 const namespaces = ['contacts', 'header']
 
@@ -18,10 +18,11 @@ export default async function Contacts({ params: { locale }}) {
             <HeaderItem v={"v12"} transparent />
             <div className='info_container'>
                 <InfoDisplay collection="Contacts" colorlines="primary" coloricon="primary" />
-                <FooterItem  transparent logo={"v9"}/>
+                <FooterItem  transparent logo={"v3"}/>
             </div>
         </div>
         <LanguageSwitcher />
+        <WhatsappButton />
         </TranslationsProvider>
     );
 }

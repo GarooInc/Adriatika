@@ -17,10 +17,6 @@ export default async function Menu({ params: { locale }}) {
             link: '/welcome'
         },
         {
-            title: t('home:nav14'),
-            link: '/misionandvision'
-        },
-        {
             title: t('home:nav2'),
             link: '/frontdesk'
         },
@@ -44,10 +40,6 @@ export default async function Menu({ params: { locale }}) {
             title: t('home:nav7'),
             link: '/events'
         },
-        // {
-        //     title: t('home:nav13'),
-        //     link: '/spa'
-        // },
         {
             title: t('home:nav10'),
             link: '/emergency'

@@ -116,13 +116,6 @@
   background-attachment: fixed;
 }
 
-.infodisplay a {
-  @apply underline text-tertiary;
-}
-
-.infodisplay strong {
-  @apply text-tertiary;
-}
 
 /* welcome */
 .welcome_container{
@@ -320,6 +313,19 @@
 
 .collapse-content th {
   @apply text-primary font-futura md:text-sm text-xs;
+}
+
+.infodisplay a{
+  @apply font-semibold ;
+}
+
+.infodisplay a, .infodisplay span {
+  text-decoration: none !important;
+  font-family: 'futura', sans-serif !important;
+}
+
+.infodisplay strong {
+  @apply font-semibold;
 }
 
 /* mision and vision */
