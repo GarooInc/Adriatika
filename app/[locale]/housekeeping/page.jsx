@@ -23,10 +23,10 @@ export default async function HouseKeeping({ params: { locale }}) {
                     <FaPhone className="mr-2 text-quaternary text-2xl" />
                     <a href="tel:+502 24962222 " className="fontdesk_item_text text-primary"><span className='uppercase'>{t('frontdesk:phone')} </span><span> +502 2496-2222 Ext. 3000 </span></a>
                 </div>
-                <div className="fontdesk_item">
+                <a href="https://wa.me/35688881" className="fontdesk_item">
                     <FaWhatsapp className="mr-2 text-quaternary text-2xl" />
-                    <a href="https://wa.me/35688881" className="fontdesk_item_text text-primary"><span className='uppercase'>{t('frontdesk:whatsapp')} </span><span> +502 3568-8881</span></a>
-                </div>
+                    <span  className="fontdesk_item_text text-quaternary"><span className='uppercase'>{t('frontdesk:whatsapp')} </span><span> +502 3568-8881</span></span>
+                </a>
                 <InfoDisplay collection="Housekeeping" colorlines="quaternary" coloricon="tertiary" />
                 <FooterItem  transparent logo={"v11"}/>
             </div>

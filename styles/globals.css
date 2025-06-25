@@ -93,6 +93,10 @@
   @apply underline text-tertiary;
 }
 
+.experiences th, .experiences td{
+  @apply text-sm font-futura text-primary;
+}
+
 .green_button{
   @apply bg-tertiary text-white  px-6 py-2 mt-2 text-sm font-futura;
 }
