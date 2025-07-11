@@ -41,25 +41,28 @@ const ExperienceInnerItem = ({experienceId}) => {
                     <div className='p-10 bg-cream md:min-h-full md:w-1/2 flex flex-col justify-center'>
                         <h1 className="text-2xl md:text-4xl text-start text-primary font-futura font-bold">{experience.title}</h1>
                         <div className="text-black md:px-0 gap-4 flex flex-col experiences futura_description" dangerouslySetInnerHTML={{ __html: experience[`description_${currentLocale}`] }}></div>
-                        <button
-                        className="btn md:w-40 w-full bg-secondary text-black border-primary btn-primary mt-4 hover:bg-white  font-futura hover:border-black hover:text-black transition duration-300 ease-in-out hover:scale-105"
-                        onClick={() => {
-                            const pdf =
-                                currentLocale === 'en'
-                                    ? experience.pdf_en
-                                    : experience.pdf_es;
-                            if (pdf) {
-                                window.open(
-                                    `${backendUrl}/api/files/${experience.collectionId}/${experience.id}/${pdf}?token=`,
-                                    '_blank'
-                                );
-                            } else {
-                                alert('PDF no disponible');
-                            }
+                        {
+                        experience[`pdf_${currentLocale}`] && (<button
+                            className="btn md:w-40 w-full bg-secondary text-black border-primary btn-primary mt-4 hover:bg-white  font-futura hover:border-black hover:text-black transition duration-300 ease-in-out hover:scale-105"
+                            onClick={() => {
+                                const pdf =
+                                    currentLocale === 'en'
+                                        ? experience.pdf_en
+                                        : experience.pdf_es;
+                                if (pdf) {
+                                    window.open(
+                                        `${backendUrl}/api/files/${experience.collectionId}/${experience.id}/${pdf}?token=`,
+                                        '_blank'
+                                    );
+                                } else {
+                                    alert('PDF no disponible');
+                                }
                         }}
                     >
-                        {experience[`btn_pdf_${currentLocale}`] || 'Learn More'}
+                        {experience[`btn_pdf_${currentLocale}`]}
                     </button>
+                    )
+                        }
                     </div>
                 </div>
             )
