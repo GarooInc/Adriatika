@@ -42,7 +42,13 @@ const ActivitiesItem = () => {
                 key={index} 
                 className={`bg-secondary shadow-md flex md:flex-col relative cursor-pointer rounded-md`}>
                     <div className='flex justify-center w-full items-center'>
-                        <img className="w-full h-full object-cover md:rounded-t-md rounded-l-md" src={`${backendUrl}/api/files/${item.collectionId}/${item.id}/${item.Image}?token=`} alt={item.name} />
+                        <img
+                          className="w-full h-full object-cover
+                            rounded-none
+                            rounded-l-md                 
+                            md:rounded-tl-md md:rounded-tr-md  
+                            md:rounded-bl-none md:rounded-br-none "
+                        src={`${backendUrl}/api/files/${item.collectionId}/${item.id}/${item.Image}?token=`} alt={item.name} />
                     </div>
 
                     <div className='flex flex-col gap-4 w-full p-4'>
