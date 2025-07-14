@@ -26,7 +26,7 @@ const RootLayout = ({children}) => {
             {/* Google Analytics */}
             <Script
               strategy="afterInteractive"
-              src="https://www.googletagmanager.com/gtag/js?id=G-D0C03MYEND"
+              src="https://www.googletagmanager.com/gtag/js?id=G-X7WVHJPEC2"
             />
             <Script id="google-analytics" strategy="afterInteractive">
               {`
@@ -34,7 +34,7 @@ const RootLayout = ({children}) => {
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
-                gtag('config', 'G-D0C03MYEND');
+                gtag('config', 'G-X7WVHJPEC2');
               `}
             </Script>         
         </head>
