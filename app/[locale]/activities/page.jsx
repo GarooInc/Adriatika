@@ -22,6 +22,7 @@ return (
                     <div className='md:w-2/3 text-quaternary text-justify flex flex-col gap-4'>
                         <p className='futura_description'>{t('activities:desc')}</p>
                         <p className='futura_description'>{t('activities:desc2')}</p>
+                        <p className='futura_description'>{t('activities:desc3')}</p>
                     </div>
                 </div>
                 <ActivitiesItem />

@@ -12,9 +12,13 @@ const FoodDrinksItem = () => {
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL
     const pb = new PocketBase(backendUrl);
     pb.autoCancellation(false);
+    const { t } = useTranslation();
 
-    const openPdf = (item) => {
-        window.open(`${backendUrl}/api/files/${item.collectionId}/${item.id}/${item.menu_pdf}?token=`);
+
+    const openPdf = (item, menutype) => {
+        menutype = menutype === 'menu1' ? item.menu1_pdf : item.menu2_pdf;
+        const pdfUrl = `${backendUrl}/api/files/${item.collectionId}/${item.id}/${menutype}?token=`;
+        window.open(pdfUrl, '_blank');
     };
     
     const { i18n } = useTranslation();
@@ -59,7 +63,24 @@ const FoodDrinksItem = () => {
                                     <TbClockHour3Filled className="text-primary text-md" />
                                     {item.open} - {item.closes}
                                 </p>
-                                <button className='menu_btn' onClick={() => openPdf(item)}>Menu</button>
+                                <div className='flex gap-4'>
+                                {
+                                    item.menu1_pdf && (
+                                        <button className='menu_btn' onClick={() => openPdf(item, 'menu1')}>
+                                            {
+                                                t('food_drinks:menu1') || 'Menu 1'
+                                            }
+                                        </button>
+                                    )
+                                }
+                                {item.menu2_pdf && (
+                                    <button className='menu_btn' onClick={() => openPdf(item, 'menu2')}>
+                                        {
+                                            t('food_drinks:menu2') || 'Menu 2'
+                                        }
+                                    </button>
+                                )}
+                                </div>
                         </div>
                     </div>
                 </div>
