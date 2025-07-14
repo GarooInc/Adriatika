@@ -7,8 +7,10 @@ import InfoDisplay from '@/components/InfoDisplay/InfoDisplay'
 import FooterItem from '@/components/FooterItem/FooterItem'
 import ServicesItem from '@/components/ServicesItem/ServicesItem'
 import { FaWhatsapp, FaPhone } from "react-icons/fa"
+import { GoClock } from "react-icons/go";
 
-const namespaces = ['home', 'header']
+
+const namespaces = ['frontdesk', 'home']
 
 export default async function HouseKeeping({ params: { locale }}) {
     const { t, resources } = await initTranslations(locale, namespaces)
@@ -18,7 +20,11 @@ export default async function HouseKeeping({ params: { locale }}) {
         <div className="page bg-secondary">
             <HeaderItem v={"v3"} transparent/>
             <h2 className='italictiempos_title text-quaternary'>{t('home:nav3')}</h2>
-            <div className='info_container'>
+            <div className='info_container gap-4'>
+                <div className='fontdesk_item'>
+                    <GoClock className="mr-2 text-quaternary text-2xl" />
+                    <span className="fontdesk_item_text text-primary"><span className='uppercase'>{t('frontdesk:hours')} </span><span>{t('frontdesk:hours_value')}</span></span>
+                </div>
                 <div className="fontdesk_item">
                     <FaPhone className="mr-2 text-quaternary text-2xl" />
                     <a href="tel:+502 24962222 " className="fontdesk_item_text text-primary"><span className='uppercase'>{t('frontdesk:phone')} </span><span> +502 2496-2222 Ext. 3000 </span></a>
