@@ -52,7 +52,7 @@ const ActivitiesItem = () => {
                     </div>
 
                     <div className='flex flex-col gap-4 w-full p-4'>
-                        <h3 className="font-futura uppercase text-black">{item[`title_${currentLocale}`]}</h3>
+                        <h3 className="font-futura text-black">{item[`title_${currentLocale}`]}</h3>
                         <div className="activities_inner_container">
                             <FaLocationDot className="icon_activities text-md " />
                             <p className='activities_inner_text'>{item[`location_${currentLocale}`]}</p>

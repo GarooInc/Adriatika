@@ -54,7 +54,7 @@ const EventsItem = () => {
                         )}
 
                         <div className='flex justify-center items-center flex-col px-4'>
-                            <h3 className="text-base leading-tight font-futura mt-2 uppercase text-center" style={{ color: item.text_color }}>
+                            <h3 className="text-base leading-tight font-futura mt-2 text-center" style={{ color: item.text_color }}>
                                 {item[`title_${currentLocale}`]}
                             </h3>
                             <span

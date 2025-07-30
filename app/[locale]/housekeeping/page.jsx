@@ -23,15 +23,15 @@ export default async function HouseKeeping({ params: { locale }}) {
             <div className='info_container gap-4'>
                 <div className='fontdesk_item'>
                     <GoClock className="mr-2 text-quaternary text-2xl" />
-                    <span className="fontdesk_item_text text-primary"><span className='uppercase'>{t('frontdesk:hours')} </span><span>{t('frontdesk:hours_value')}</span></span>
+                    <span className="fontdesk_item_text text-primary"><span className=''>{t('frontdesk:hours')} </span><span>{t('frontdesk:hours_value')}</span></span>
                 </div>
                 <div className="fontdesk_item">
                     <FaPhone className="mr-2 text-quaternary text-2xl" />
-                    <a href="tel:+502 24962222 " className="fontdesk_item_text text-primary"><span className='uppercase'>{t('frontdesk:phone')} </span><span> +502 2496-2222 Ext. 3000 </span></a>
+                    <a href="tel:+502 24962222 " className="fontdesk_item_text text-primary"><span className=''>{t('frontdesk:phone')} </span><span> +502 2496-2222 Ext. 3000 </span></a>
                 </div>
                 <a href="https://wa.me/35688881" className="fontdesk_item">
                     <FaWhatsapp className="mr-2 text-quaternary text-2xl" />
-                    <span  className="fontdesk_item_text text-quaternary"><span className='uppercase'>{t('frontdesk:whatsapp')} </span><span> +502 3568-8881</span></span>
+                    <span  className="fontdesk_item_text text-quaternary"><span className=''>{t('frontdesk:whatsapp')} </span><span> +502 3568-8881</span></span>
                 </a>
                 <InfoDisplay collection="Housekeeping" colorlines="quaternary" coloricon="tertiary" />
                 <FooterItem  transparent logo={"v11"}/>
