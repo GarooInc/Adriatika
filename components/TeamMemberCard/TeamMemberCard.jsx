@@ -166,11 +166,11 @@ export default function TeamMemberCard({ memberId }) {
           </div>
             {/* Download VCard Button */}
             <div className="flex justify-center mt-8">
-              <a href={`/path/to/vcard/${member.id}.vcf`} className="bg-[#646363] text-white py-2 px-6 rounded-full shadow-md hover:shadow-lg transition-shadow">
+              <button className="bg-[#646363] text-white py-2 px-6 rounded-full shadow-md hover:shadow-lg transition-shadow" onClick={handleDownloadVCard}>
                 {
                     t('team:add_contact')
                 }
-              </a>
+              </button>
             </div>
           </div>
         </div>
