@@ -83,13 +83,13 @@ export default function TeamMemberCard({ memberId }) {
             <img 
               src="/assets/images/logo_v1.png" 
               alt="Adriatika Logo" 
-              className="w-32 h-auto"
+              className="w-40 h-auto"
             />
           </div>
         </div>
 
         {/* Profile Section */}
-        <div className="relative bg-white -mt-20 pt-12 pb-8 px-8 rounded-t-2xl">
+        <div className="flex flex-col justify-center items-center w-full relative bg-white -mt-20 pt-12 pb-8 px-8 rounded-t-2xl font-futura">
             
           {/* Avatar */}
           <div className="absolute left-1/2 -translate-x-1/2 -top-20">
@@ -107,15 +107,14 @@ export default function TeamMemberCard({ memberId }) {
             </div>
           </div>
 
-          {/* Name and Title */}
           <div className="text-center mt-8 mb-4">
             <h1 className="text-black text-xl mb-2">{member.firstName} {member.lastName}</h1>
-            <p className="text-gray-500">{member.title}</p>
+            <p className="text-gray-500">{member.position}</p>
           </div>
 
           {/* Description */}
           <p className="text-center text-gray-400 mb-8 px-4">
-            Lorem ipsum dolor sit amet consectetur. Eget faucibus pretium ornare vehicula duis. Luctus id semper vitae vivamus et cursus eu libero.
+            {member.description}
           </p>
 
           {/* Action Buttons */}
@@ -165,7 +164,7 @@ export default function TeamMemberCard({ memberId }) {
             </div>
           </div>
             {/* Download VCard Button */}
-            <div className="flex justify-center mt-8">
+            <div className="flex justify-center mt-8 md:w-1/3 w-full">
               <button className="bg-[#646363] text-white py-2 px-6 rounded-full shadow-md hover:shadow-lg transition-shadow w-full md:text-xl text-lg" onClick={handleDownloadVCard}>
                 {
                     t('team:add_contact')
