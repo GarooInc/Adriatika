@@ -75,7 +75,8 @@ export default function TeamMemberCard({ memberId }) {
       <div className="w-full  ">
         {/* Header Section with Background */}
         <div 
-          className="relative h-[280px] bg-cover bg-center bg-[#646363] "
+          className="relative h-[280px] bg-cover bg-center "
+          style={{ backgroundImage: "url('/assets/images/team/bg.jpeg')" }}
         >
 
           {/* Logo */}
